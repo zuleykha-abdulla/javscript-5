@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="./css/calculator.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <!--navbar start-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Mousover </a></li>
+            <li><a href="sekil.html">Mouseout</a></li>
+            <li><a href="event.html">The onkeypress Event</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="calculator-body">
+        <textarea name="hesabla" id="hesabla" cols="5" rows="3"></textarea>
+        <div class="CALCULATOR">
+          <button onclick="">AC</button>
+          <button onclick="">DEL</button>
+          <button onclick="">%</button>
+          <button onclick="">/</button>
+          <button onclick="">7</button>
+          <button onclick="">8</button>
+          <button onclick="">9</button>
+          <button onclick="">*</button>
+          <button onclick="">4</button>
+          <button onclick="">5</button>
+          <button onclick="">6</button>
+          <button onclick="">-</button>
+          <button onclick="">1</button>
+          <button onclick="">2</button>
+          <button onclick="">3</button>
+          <button onclick="">+</button>
+          <button onclick="">0</button>
+          <button onclick="">00</button>
+          <button onclick="">.</button>
+          <button onclick="">=</button>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section first>
+      <div class="hesabla-body">
+        <input type="text" id="eded1" />
+        <input type="text" id="eded2" />
+        <br /><br /><br />
+        <select id="select">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <div>
+          <span>NETICE</span> &nbsp;
+          <span id="netice"></span>
+        </div>
+        <br /><br /><br />
+        <button onclick="hesabla()">Hesabla</button>
+        <button onclick="clean()">Temizle</button>
+      </div>
+    </section>
+
+    <script src="./app/calculator.js"></script>
+  </body>
+</html>

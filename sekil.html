@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <!--navbar start-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Mousover </a></li>
+            <li><a href="sekil.html">Mouseout</a></li>
+            <li><a href="event.html">The onkeypress Event</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="this">
+        <h2>Çağırış obyekti</h2>
+        <br />
+        <p>
+          Çağırış obyekti JavaScript interpretatoru funksiyanı çagıran zaman,
+          ilk novbədə gorunmə sahələri zəncirinə muvaiq olaraq funksiyanın
+          icrası zamanı quvvədə olan gorunmə sahəsi qurulur. Sonra zəncirin
+          başlangıcına çagırış obyekti kimi bilinən yeni obyekti əlavə edilir.
+          Bu obyekti, ECMAScript spesi ikasiyasında aktivləşdirmə obyekti
+          (activation object) termini ilə adlandırılır. Daha sonra funksiyanın
+          Arguments obyektinə istinad edən arguments xususiyyəti çagırış
+          obyektinə əlavə edilir. Bundan sonra isə, çagırış obyektinə
+          funksiyanın adlandırılmış arqumentləri əlavə edilir. var təlimatının
+          koməyi ilə elan edilmiş istənilən lokal dəyişən, həmçinin çagırış
+          obyektinin daxilində də təyin edilir. Madam ki, çagırış obyekti
+          gorunmə sahələri zəncirinin başlangıcında yerləşir, onda butun lokal
+          dəyişənlər, funksiya arqumentləri və Arguments obyekti funksiyanın
+          govdəsindən gorulən olur. Hər şeydən əlavə bu onu bildirir ki, butun
+          eyni adlı xususiyyətlər gorunmə sahəsi xaricində məlum olur. Nəzərə
+          alın ki, arguments-dən fərqli olaraq, this– çagırış obyektinin
+          xususiyyəti deyil, sadəcə açar sozudur. 8.8.3. Çağırış obyek ad fəzası
+          qismində Bəzən olur yalnız funksiyanı ona gorə yaratmaq rahat,
+          çagırışı
+        </p>
+      </div>
+      <br />
+      <div id="qizilgul">
+        <img
+          onmouseover="bigImg(this)"
+          onmouseout="normalImg(this)"
+          src="./img/7.gif"
+          alt="qizilgul"
+        />
+      </div>
+      <div class="tekst">
+        <h2>
+          Mətnə mousla clik edib saxlayan zaman mətnin renginin dəyişdirilməsi
+          əməliyyati
+        </h2>
+        <br />
+
+        <p id="metn" onmousedown="mouseDown()" onmouseup="mouseUp()">
+          The mouseDown() function sets the color of this text to red. The
+          mouseUp() function sets the color of this text to blue.
+        </p>
+      </div>
+    </section>
+
+    <script src="./app/sekil.js"></script>
+  </body>
+</html>

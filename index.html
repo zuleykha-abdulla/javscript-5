@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <!--navbar start-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Mousover </a></li>
+            <li><a href="sekil.html">Mouseout</a></li>
+            <li><a href="event.html">The onkeypress Event</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div>
+        <h2>mouseover, mousemove, mouseout, mousedown, mouseup</h2>
+
+        <br />
+        <p>
+          mouseover bir elementin üzərindən hərəkət etdikdə atəş açır.
+          mouseover, kursorun sərhədi elementə keçən kimi siçanın hərəkətini
+          aşkar edir (mousemove, digər tərəfdən, artıq elementin sərhədindədir).
+
+          <br />
+          Uzun illər ərzində onmouseover / onmouseout və onun CSS counterpart
+          :hover istifadəçi göstərdi ki, burada hərəkət və effektlər tetiklemek
+          olar və istifadəçi interfeysləri başa düşülən şəkildə çatdırılmışdır.
+          Bu gün biz touch ekranlar üçün alternativ vasitələrdən istifadə
+          etməliyik. Notebooks və smartfonlar və touchscreens touch padlar siçan
+          hadisələrinə mütləq reaksiya vermir. Əlbəttə ki, siçan hadisələrinə
+          bir zamanlar olduğu kimi deyil, hadisələrə və jestlərə toxunmaq
+          lazımdır.
+        </p>
+        <br />
+        <h2>onmousedown, onmouseup</h2>
+        <br />
+        <p>
+          Javascript mouseup, bir elementin üzərində siçan düyməsi buraxıldıqda
+          hadisə idarəçisini çağırır. onmousedown istifadəçi bir elementin
+          üzərində siçan açar aşağı itələyəndə bir hadisə idarəçisini çağırar.
+          Siçan düyməsini aşağı basmaq həmişə üç hadisə meydana gətirir:
+          mousedown, mouseup, və basın. Bu sıra ilə bir-birinin ardınca işlənir.
+          Növbəti tədbir başlamamış hər bir hadisə yerinə yetirilməlidir.
+          <br />
+        </p>
+        <br />
+        <h2>onmousedown – animasiyalara daha tez cavab</h2>
+        <br />
+        <p>
+          İlk baxışdan onmousedownun onklik hadisə ilə çox oxşarlığı görünür.
+          Əsas fərq ondadır ki, onmousedown hadisəsi istifadəçi siçan düyməsinə
+          basdığı kimi atəş açır. Onkk hadisəsi düymə aşağı basdıqda və
+          buraxıldıqda atəş açır. Belə ki, onklik onmousedown və onmouseup
+          birləşməsidir. klik əvəzinə mousedown istifadəçiyə klik etməkdən çox
+          daha sürətli cavab verə bilər. onmousedown tez-tez istifadə olunmur,
+          çünki əksər proqramlarda istifadəçi artıq basılmış siçan düyməsi ilə
+          elementi buraxaraq bir elementin təsadüfən kliklənməsini hələ də geri
+          ala bilər. Bu, onkliki hadisə üçün işləyir, lakin onmousedown hadisəsi
+          üçün deyil. Bu səbəbdən burada "quick off the button" haqqında heç nə
+          yoxdur. İstifadəçi düymənin üzərində siçan düyməsini basdıqda, hətta
+          siçan düyməsi buraxılmamışdan əvvəl düymə artıq cavab verir.
+        </p>
+      </div>
+      <br />
+      <br />
+
+      <div onmouseover="onMouse()" onmouseout="onOut()" id="div1">
+        <h2>
+          Javascript onmousemove siçan bir elementin üzərindən hərəkət edərkən
+          hadisə idarəçisini çağırır. mousemove siçan hər piksel ətrafında
+          hərəkət edir. onmousemove siçan pointer elementin daxilində olduğu
+          müddətcə aktiv qalır. Siçan işarəçi əşyanı tərk etdikdə onmouseout
+          atəş açılacaq.
+        </h2>
+      </div>
+    </section>
+    <script src="./app/script.js"></script>
+  </body>
+</html>

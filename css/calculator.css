@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #552d50;
+  color: aliceblue;
+}
+h2 {
+  text-align: center;
+}
+p {
+  text-align: justify;
+}
+header {
+  margin-top: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+.navbar {
+  margin-top: 10px;
+  position: relative;
+  width: 800px;
+  height: 50px;
+
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  background-color: #552d50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #af0f7a;
+}
+
+.navbar ul li a {
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+section {
+  margin-top: 30px;
+  padding: 20px 20px 20px 20px;
+}
+.calculator-body {
+  width: 340px;
+  height: 460px;
+  border: 5px solid #00ffff;
+  box-shadow: 0 15px #ccd6d6;
+  margin: 0 auto;
+}
+
+.CALCULATOR {
+  width: 330px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 20px;
+  background-color: #00ffff;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 2px solid #00ffff;
+  text-align: center;
+  box-shadow: 0 5px #38bbb0;
+  cursor: pointer;
+}
+button:hover {
+  background-color: antiquewhite;
+}
+#hesabla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 50px;
+  background-color: antiquewhite;
+  box-shadow: 0 5px #38bbb0;
+}
+input {
+  width: 40%;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: 2px solid #c9579d;
+  text-align: center;
+  box-shadow: 0 5px #813665;
+}
+.hesabla-body {
+  width: 200px;
+  height: 300px;
+  background-color: #813665;
+  border-radius: 10%;
+  border: 3px solid pink;
+  padding: 10px 10px 10px 10px;
+}
